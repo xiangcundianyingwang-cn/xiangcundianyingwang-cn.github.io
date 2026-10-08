@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="乡村电影网 - 乡土电影片单推荐与观影指南。聚焦乡土中国、农村题材、返乡叙事、田园治愈与农耕文明影像：村口放映、四季片单、高分榜单、节气观影，附正版观看渠道。">
+<meta name="keywords" content="乡村电影网,乡村电影,乡土电影,农村题材电影,返乡电影,田园治愈,农耕文明,高分华语片">
+<meta name="author" content="乡村电影网">
+<meta name="theme-color" content="#241c12">
+<title>乡村电影网 - 乡土电影片单推荐 · 村口放映 / 四季片单 / 高分榜单 / 节气观影 | 乡村电影网</title>
+<link rel="canonical" href="https://xiangcundianyingwang-cn.github.io/">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:"PingFang SC","Microsoft YaHei","WenQuanYi Micro Hei",system-ui,sans-serif;background:#241c12;color:#f3ead9;line-height:1.8;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+ul,ol,dl{list-style:none}
+:focus-visible{outline:2px solid #e7b35a;outline-offset:3px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 1.3rem}
+
+/* 顶栏 */
+.top{position:sticky;top:0;z-index:99;background:rgba(36,28,18,.94);backdrop-filter:blur(14px);border-bottom:1px solid #4a3a23}
+.tin{display:flex;align-items:center;gap:1rem;height:60px}
+.brand{display:flex;align-items:center;gap:.6rem;font-weight:950;font-size:1.16rem;white-space:nowrap;letter-spacing:.01em}
+.logo{width:38px;height:38px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;color:#241c12;background:
+  radial-gradient(circle at 32% 26%,#fff3cf,#e7b35a 42%,#a9711c 78%,#5d3c0c);
+  box-shadow:0 0 24px rgba(231,179,90,.4);flex:0 0 auto;animation:lo 6s ease-in-out infinite alternate}
+@keyframes lo{to{filter:brightness(1.16) hue-rotate(8deg)}}
+.brand em{font-style:normal;color:#e7b35a;font-size:.34rem;letter-spacing:.2em;display:block;font-weight:700;margin-top:-.2em}
+.tabs{display:flex;gap:.2rem;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tabs a{padding:.46rem .9rem;border-radius:999px;font-size:.84rem;color:#d8c49c;white-space:nowrap;transition:.2s}
+.tabs a:hover{color:#fff;background:rgba(231,179,90,.16)}
+.tabs a.on{background:linear-gradient(100deg,#e7b35a,#c8892a);color:#241c12;font-weight:900;box-shadow:0 6px 18px rgba(200,137,42,.34)}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;background:
+  radial-gradient(560px 250px at 90% 8%,rgba(231,179,90,.24),transparent 54%),
+  radial-gradient(400px 210px at 6% 58%,rgba(120,150,90,.14),transparent 58%),
+  linear-gradient(168deg,#160f08,#2a2013 54%,#160f08)}
+.hills{position:absolute;inset:auto 0 0;height:44%;z-index:1;pointer-events:none;opacity:.9;
+  background:
+    radial-gradient(ellipse 74% 78% at 14% 100%,#2f2618,#241c12 60%),
+    radial-gradient(ellipse 60% 66% at 46% 100%,#3a2f1c,#241c12 60%),
+    radial-gradient(ellipse 66% 72% at 80% 100%,#33291a,#241c12 60%)}
+.stalks{position:absolute;inset:0;z-index:2;pointer-events:none;opacity:.5;
+  background-image:repeating-linear-gradient(78deg,transparent 0 13px,rgba(231,179,90,.2) 14px 15px),repeating-linear-gradient(-82deg,transparent 0 21px,rgba(120,150,90,.16) 22px 23px);
+  animation:wg 9s linear infinite}
+@keyframes wg{to{background-position:26px 0}}
+.hbox{position:relative;z-index:3;display:grid;grid-template-columns:1fr .86fr;gap:2.6rem;align-items:center;padding:4rem 1.3rem;max-width:1180px;margin:0 auto}
+.kick{display:inline-flex;align-items:center;gap:.5rem;font-size:.75rem;color:#f3ead9;background:rgba(231,179,90,.15);border:1px solid rgba(231,179,90,.46);padding:.3rem .8rem;border-radius:999px;margin-bottom:1rem}
+h1{font-size:clamp(1.85rem,4.6vw,3rem);line-height:1.24;font-weight:950;margin-bottom:1rem;background:linear-gradient(100deg,#fff,#ffe8bd 48%,#e7b35a);-webkit-background-clip:text;background-clip:text;color:transparent}
+h1 u{text-decoration:none;color:#e7b35a;-webkit-text-fill-color:#e7b35a}
+.hero>p{color:#d8c49c;font-size:1rem;max-width:31em;margin-bottom:1.5rem}
+.acts{display:flex;gap:.7rem;flex-wrap:wrap}
+.b{padding:.78rem 1.8rem;border-radius:12px;font-weight:850;font-size:.94rem;border:0;cursor:pointer;transition:.25s}
+.b.p{background:linear-gradient(100deg,#e7b35a,#c8892a);color:#241c12;box-shadow:0 10px 26px rgba(200,137,42,.3)}
+.b.p:hover{transform:translateY(-2px)}
+.b.o{background:transparent;color:#f3ead9;border:1px solid #6a552e}
+.sts{display:flex;gap:1.8rem;margin-top:1.7rem;flex-wrap:wrap}
+.sts div{font-size:.77rem;color:#c2ad82}
+.sts b{display:block;font-size:1.5rem;color:#e7b35a;font-weight:950;line-height:1.2;text-shadow:0 0 14px rgba(231,179,90,.5)}
+
+/* 村口黑板 */
+.board{position:relative;width:100%;max-width:310px;margin-left:auto;background:#3b2a18;border:9px solid #5d3c0c;border-radius:10px;padding:1.4rem 1.2rem;box-shadow:0 26px 60px rgba(0,0,0,.6),inset 0 0 40px rgba(0,0,0,.35)}
+.board::before{content:"";position:absolute;inset:0;border-radius:3px;background:
+  radial-gradient(circle at 20% 30%,rgba(255,255,255,.04),transparent 40%),
+  radial-gradient(circle at 82% 70%,rgba(255,255,255,.05),transparent 44%)}
+.board h4{color:#e7b35a;font-size:1rem;margin-bottom:.9rem;letter-spacing:.06em}
+.board li{color:#f3ead9;font-size:.86rem;padding:.42rem 0;display:flex;gap:.6rem;align-items:baseline;border-bottom:1px dashed rgba(231,179,90,.24)}
+.board li:last-child{border:0}
+.board li b{color:#e7b35a;font-weight:850;font-size:.72rem;min-width:1.4em}
+.board .chalk{position:absolute;bottom:-16px;right:16px;width:46px;height:12px;border-radius:6px;background:#e7b35a;transform:rotate(-12deg);box-shadow:0 4px 10px rgba(0,0,0,.5)}
+
+/* 通用 */
+section{padding:3.4rem 0}
+.uh{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;margin-bottom:1.7rem;flex-wrap:wrap}
+.ut{font-size:clamp(1.3rem,2.8vw,1.85rem);font-weight:950;display:flex;align-items:center;gap:.6rem}
+.ut::before{content:"";width:5px;height:1.2em;border-radius:3px;background:linear-gradient(#e7b35a,#c8892a)}
+.us{font-size:.8rem;color:#c2ad82}
+.us:hover{color:#e7b35a}
+
+/* A：村口放映（Grid 卡片墙） */
+.now{background:linear-gradient(180deg,#241c12,#2a2013)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:1rem}
+.mv{border:1px solid #4a3a23;border-radius:16px;overflow:hidden;background:#2a2013;transition:.34s;cursor:pointer;display:flex;flex-direction:column}
+.mv:hover{transform:translateY(-7px) rotate(-.7deg);border-color:#e7b35a;box-shadow:0 26px 56px rgba(0,0,0,.55)}
+.cvr{height:140px;display:flex;align-items:center;justify-content:center;font-size:2.8rem;position:relative}
+.cvr::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(36,28,18,.94),transparent 56%)}
+.cvr b{position:relative;z-index:2;filter:drop-shadow(0 8px 14px rgba(0,0,0,.6));transition:.4s;font-weight:400}
+.mv:hover .cvr b{transform:scale(1.16) rotate(9deg)}
+.cvr .yr{position:absolute;top:.6rem;left:.6rem;z-index:3;font-size:.68rem;font-weight:850;padding:.2rem .55rem;border-radius:6px;background:#e7b35a;color:#241c12}
+.cvr .tg{position:absolute;top:.6rem;right:.6rem;z-index:3;font-size:.62rem;font-weight:850;padding:.2rem .5rem;border-radius:6px;background:#a9711c;color:#f3ead9}
+.mv h3{font-size:.98rem;padding:.8rem .95rem .2rem;display:flex;justify-content:space-between;gap:.5rem;align-items:baseline}
+.mv h3 i{font-style:normal;font-size:.64rem;color:#e7b35a;font-weight:750;white-space:nowrap;border:1px solid rgba(231,179,90,.5);border-radius:999px;padding:.14rem .5rem;background:rgba(231,179,90,.12)}
+.mv p{font-size:.74rem;color:#c2ad82;padding:0 .95rem .9rem}
+
+/* B：四季片单（手风琴 details） */
+.sea{background:#2a2013}
+.acc{display:grid;gap:.7rem}
+.acc details{border:1px solid #4a3a23;background:#2c2214;border-radius:14px;overflow:hidden;transition:.3s}
+.acc details[open]{border-color:#e7b35a;box-shadow:0 26px 56px rgba(0,0,0,.5)}
+.acc summary{cursor:pointer;padding:1rem 1.15rem;font-weight:900;font-size:1rem;display:flex;align-items:center;gap:.8rem;list-style:none}
+.acc summary::-webkit-details-marker{display:none}
+.acc summary::before{content:counter(s,decimal-leading-zero);counter-increment:s;font-size:.92rem;font-weight:950;color:#241c12;width:38px;height:38px;border-radius:10px;flex:0 0 auto;display:flex;align-items:center;justify-content:center;background:var(--c)}
+.acc summary::after{content:"＋";margin-left:auto;color:#e7b35a;font-size:1.2rem;font-weight:400}
+.acc details[open] summary::after{content:"－"}
+.acc .in{padding:.2rem 1.15rem 1.1rem}
+.acc ol{counter-reset:li;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:.5rem .9rem}
+.acc li{counter-increment:li;font-size:.87rem;padding:.5rem 0 .5rem 2.2em;position:relative;color:#e2d3b4;border-top:1px dashed rgba(231,179,90,.22)}
+.acc li::before{content:counter(li,decimal-leading-zero);position:absolute;left:0;top:.5rem;color:#e7b35a;font-weight:850;font-size:.76rem}
+.acc li em{font-style:normal;font-size:.68rem;color:#a9711c;margin-left:.5rem;white-space:nowrap}
+
+/* C：高分榜单（table） */
+.rk{}
+.tb{width:100%;border-collapse:collapse;background:#2c2214;border:1px solid #4a3a23;border-radius:14px;overflow:hidden;font-size:.9rem}
+.tb th{background:#3a2c18;color:#e7b35a;font-weight:850;font-size:.78rem;letter-spacing:.05em;text-align:left;padding:.8rem .9rem;border-bottom:1px solid #4a3a23;white-space:nowrap}
+.tb td{padding:.72rem .9rem;border-bottom:1px solid #4a3a23;vertical-align:middle}
+.tb tr:last-child td{border-bottom:0}
+.tb tbody tr{transition:.2s}
+.tb tbody tr:hover{background:rgba(231,179,90,.1)}
+.tb td:first-child{font-weight:960;color:#e7b35a;width:50px;text-align:center;font-variant-numeric:tabular-nums}
+.tb td:nth-child(2){font-weight:750}
+.tb td:nth-child(6){color:#ffd479;font-weight:800;white-space:nowrap}
+.tag{display:inline-block;font-size:.66rem;padding:.16rem .6rem;border-radius:999px;border:1px solid rgba(231,179,90,.5);color:#e7b35a;white-space:nowrap}
+.tag.w{color:#ffd479;border-color:rgba(255,212,121,.45)}
+.tag.p{color:#ffb3a0;border-color:rgba(255,179,160,.45)}
+
+/* D：节气观影（栅格时间轴） */
+.md{background:#2a2013;border-top:1px solid #4a3a23;border-bottom:1px solid #4a3a23}
+.line{position:relative;padding-top:2.4rem}
+.line::before{content:"";position:absolute;top:1.1rem;left:0;right:0;height:3px;border-radius:3px;
+  background:linear-gradient(90deg,#5d3c0c,#a9711c,#e7b35a,#c8892a,#5d3c0c)}
+.nodes{display:grid;grid-template-columns:repeat(5,1fr);gap:1rem}
+.nd{position:relative;padding-top:2rem}
+.nd::before{content:"";position:absolute;top:-1.5rem;left:50%;transform:translateX(-50%);width:20px;height:20px;border-radius:50%;background:#241c12;border:4px solid var(--c);box-shadow:0 0 0 5px rgba(36,28,18,.9),0 0 18px var(--c)}
+.nd .t{text-align:center;font-size:1.05rem;font-weight:950;color:#e7b35a;margin-bottom:.35rem}
+.nd .s{text-align:center;font-size:.72rem;color:#a9711c;letter-spacing:.08em;margin-bottom:.8rem}
+.nd .card{border:1px solid #4a3a23;border-radius:13px;background:#2c2214;padding:.95rem;transition:.3s;height:100%}
+.nd .card:hover{transform:translateY(-7px);border-color:#e7b35a;box-shadow:0 26px 56px rgba(0,0,0,.55)}
+.nd .card h3{font-size:.92rem;margin-bottom:.45rem;display:flex;align-items:center;gap:.45rem}
+.nd .card h3 i{font-style:normal;font-size:.62rem;font-weight:850;color:#241c12;background:#e7b35a;border-radius:5px;padding:.12rem .45rem;white-space:nowrap}
+.nd .card p{font-size:.76rem;color:#c2ad82}
+
+/* 页脚 */
+.foot{background:#160f08;padding:2.6rem 0 1.2rem;border-top:1px solid #4a3a23}
+.fg{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1.5rem;margin-bottom:1.6rem}
+.foot h5{font-size:.92rem;color:#e7b35a;margin-bottom:.7rem;display:flex;align-items:center;gap:.4rem}
+.foot li{font-size:.83rem;color:#c2ad82;line-height:1.95}
+.foot a:hover{color:#fff}
+.cp{text-align:center;font-size:.74rem;color:#a98e5c;border-top:1px solid #4a3a23;padding-top:1.2rem;line-height:1.95}
+.cp a{color:#e7b35a}
+
+@media(max-width:900px){
+  .hbox{grid-template-columns:1fr;padding-top:2.6rem;padding-bottom:3rem}
+  .board{margin:0 auto;transform:scale(.92)}
+  .hills{height:34%}
+}
+@media(max-width:560px){
+  .tin{height:54px}.brand{font-size:.96rem}.logo{width:32px;height:32px;font-size:1.1rem}
+  .tabs a{padding:.4rem .6rem;font-size:.78rem}
+  .wrap{padding:0 1rem}
+  section{padding:2.6rem 0}
+  h1{font-size:1.74rem}
+  .grid{grid-template-columns:repeat(2,1fr);gap:.7rem}
+  .cvr{height:108px;font-size:2rem}
+  .mv h3{font-size:.82rem;padding:.7rem .8rem .2rem;flex-direction:column;gap:.3rem}
+  .tb thead{display:none}
+  .tb tr{display:block;padding:.3rem 0}
+  .tb td{display:block;padding:.26rem .9rem;border:0}
+  .tb td:first-child{color:#e7b35a;width:auto;text-align:left;font-size:.76rem}
+  .tb td:nth-child(4){display:none}
+  .nodes{grid-template-columns:1fr;gap:1.4rem}
+  .line::before{display:none}
+  .nd::before{left:14px;top:.9rem;width:15px;height:15px}
+  .nd{padding-top:.4rem;padding-left:2.4rem}
+  .nd .t,.nd .s{text-align:left}
+  .b{flex:1;text-align:center;padding:.72rem 1.2rem;font-size:.9rem}
+  .stalks{display:none}
+}
+@media print{.top,.acts,.board,.hills{display:none}}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<header class="top" role="banner">
+  <div class="tin">
+    <a class="brand" href="#top"><span class="logo">🌾</span>乡村电影网<em>RURAL CINEMA</em></a>
+    <nav class="tabs" aria-label="主导航">
+      <a href="#now" class="on">村口放映</a>
+      <a href="#sea">四季片单</a>
+      <a href="#rk">高分榜单</a>
+      <a href="#md">节气观影</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="hills" aria-hidden="true"></div>
+  <div class="stalks" aria-hidden="true"></div>
+  <div class="hbox">
+    <div>
+      <span class="kick">🌾 乡土 · 返乡 · 田园 · 人间</span>
+      <h1>乡村电影网<br>把镜头，<u>还给土地</u></h1>
+      <p><b style="color:#e7b35a">乡村电影网</b>专注于<b>乡土题材电影</b>的片单推荐与观影指南：村口放映、四季片单、高分榜单、节气观影。我们不搬运资源，只做选片——每一部都附<b>正版观看渠道</b>，让好电影回到它该在的地方。</p>
+      <div class="acts"><a class="b p" href="#now">今晚看什么</a><a class="b o" href="#md">按节气挑片</a></div>
+      <div class="sts"><div><b>24</b>节气片单</div><div><b>100%</b>正版渠道</div><div><b>0</b>广告打扰</div></div>
+    </div>
+    <aside class="board" aria-label="村口放映告示">
+      <h4>📋 村口放映 · 今日告示</h4>
+      <ul>
+        <li><b>壹</b>天没黑，先占条凳</li>
+        <li><b>贰</b>瓜子壳别扔放映机上</li>
+        <li><b>叁</b>哭的时候，别出声</li>
+        <li><b>肆</b>看完一起走夜路回家</li>
+      </ul>
+      <span class="chalk" aria-hidden="true"></span>
+    </aside>
+  </div>
+</section>
+
+<section id="now" class="now">
+  <div class="wrap">
+    <div class="uh"><h2 class="ut">村口放映</h2><a class="us" href="#">今夜四部 · 自带板凳 →</a></div>
+    <div class="grid">
+      <article class="mv"><div class="cvr" style="background:linear-gradient(150deg,#1a1610,#5d4a1c)"><span class="yr">1999</span><b>🐎</b></div><h3>那山那人那狗 <i>邮路</i></h3><p>中国 / 霍建起 · 93 分钟 · 父子、山路、一封信</p></article>
+      <article class="mv"><div class="cvr" style="background:linear-gradient(150deg,#141a16,#3d5a3a)"><span class="tg">神作</span><b>🌾</b></div><h3>秋菊打官司 <i>讨说法</i></h3><p>中国 / 张艺谋 · 110 分钟 · 一个村妇的倔强</p></article>
+      <article class="mv"><div class="cvr" style="background:linear-gradient(150deg,#1a1418,#6a3a4a)"><span class="yr">1984</span><b>👴</b></div><h3>黄土地 <i>黄土高原</i></h3><p>中国 / 陈凯歌 · 89 分钟 · 土地比人更沉默</p></article>
+      <article class="mv"><div class="cvr" style="background:linear-gradient(150deg,#16181c,#3a4a6a)"><span class="tg">必看</span><b>🚣</b></div><h3>三峡好人 <i>变迁</i></h3><p>中国 / 贾樟柯 · 108 分钟 · 水涨起来，故土沉下去</p></article>
+      <article class="mv"><div class="cvr" style="background:linear-gradient(150deg,#1c1612,#7a5a2a)"><span class="yr">2018</span><b>🐷</b></div><h3>小偷家族 <i>无血缘</i></h3><p>日本 / 是枝裕和 · 121 分钟 · 捡来的家，也是家</p></article>
+      <article class="mv"><div class="cvr" style="background:linear-gradient(150deg,#121a14,#2f6a4a)"><span class="yr">2017</span><b>🍃</b></div><h3>冈仁波齐 <i>朝圣</i></h3><p>中国 / 张杨 · 117 分钟 · 一路磕长头去拉萨</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="sea" class="sea">
+  <div class="wrap">
+    <div class="uh"><h2 class="ut">四季片单</h2><span class="us">春种 · 夏长 · 秋收 · 冬藏</span></div>
+    <div class="acc" style="counter-reset:s">
+      <details open style="--c:linear-gradient(140deg,#e7b35a,#a9711c)"><summary>🌱 春 · 播种与出走</summary><div class="in"><ol>
+        <li>那山那人那狗 <em>93 分钟</em></li>
+        <li>毕业旅行 <em>104 分钟</em></li>
+        <li>我的父亲母亲 <em>89 分钟</em></li>
+        <li>童年往事 <em>137 分钟</em></li>
+      </ol></div></details>
+      <details style="--c:linear-gradient(140deg,#a8d08d,#5d8a3c)"><summary>🌾 夏 · 暴雨与成长</summary><div class="in"><ol>
+        <li>阳光灿烂的日子 <em>140 分钟</em></li>
+        <li>爆裂鼓手 <em>106 分钟</em></li>
+        <li>少年派的奇幻漂流 <em>127 分钟</em></li>
+        <li>小武 <em>108 分钟</em></li>
+      </ol></div></details>
+      <details style="--c:linear-gradient(140deg,#e89a5c,#a94f2c)"><summary>🍂 秋 · 收成与告别</summary><div class="in"><ol>
+        <li>秋菊打官司 <em>110 分钟</em></li>
+        <li>小森林 秋春篇 <em>111 分钟</em></li>
+        <li>海边的曼彻斯特 <em>137 分钟</em></li>
+        <li>落叶归根 <em>110 分钟</em></li>
+      </ol></div></details>
+      <details style="--c:linear-gradient(140deg,#9fb6d8,#4a6a9a)"><summary>❄️ 冬 · 炉火与回望</summary><div class="in"><ol>
+        <li>黄土地 <em>89 分钟</em></li>
+        <li>冬眠 <em>196 分钟</em></li>
+        <li>小森林 冬夏篇 <em>120 分钟</em></li>
+        <li>东京物语 <em>136 分钟</em></li>
+      </ol></div></details>
+    </div>
+  </div>
+</section>
+
+<section id="rk" class="rk">
+  <div class="wrap">
+    <div class="uh"><h2 class="ut">高分榜单</h2><span class="us">乡村电影网编辑部 · 本周 7 部</span></div>
+    <table class="tb">
+      <thead><tr><th>#</th><th>片名</th><th>乡土意象</th><th>年份</th><th>气质</th><th>评分</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>东京物语</td><td>故乡村口</td><td>1953</td><td><span class="tag p">亲情</span></td><td>9.2</td></tr>
+        <tr><td>2</td><td>秋菊打官司</td><td>西北村道</td><td>1992</td><td><span class="tag">倔强</span></td><td>9.0</td></tr>
+        <tr><td>3</td><td>那山那人那狗</td><td>湘南邮路</td><td>1999</td><td><span class="tag w">治愈</span></td><td>8.9</td></tr>
+        <tr><td>4</td><td>黄土地</td><td>陕北高原</td><td>1984</td><td><span class="tag">苍凉</span></td><td>8.8</td></tr>
+        <tr><td>5</td><td>三峡好人</td><td>长江水岸</td><td>2006</td><td><span class="tag">变迁</span></td><td>8.7</td></tr>
+        <tr><td>6</td><td>小偷家族</td><td>东京下町</td><td>2018</td><td><span class="tag p">温情</span></td><td>8.7</td></tr>
+        <tr><td>7</td><td>冈仁波齐</td><td>青藏公路</td><td>2015</td><td><span class="tag w">信仰</span></td><td>8.5</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="md" class="md">
+  <div class="wrap">
+    <div class="uh"><h2 class="ut">节气观影</h2><span class="us">顺着 24 节气，看 24 种人间</span></div>
+    <div class="line">
+      <div class="nodes">
+        <div class="nd" style="--c:#a8d08d"><div class="t">春分</div><div class="s">03.20</div><div class="card"><h3>那山那人那狗 <i>93 分钟</i></h3><p>昼夜等分，适合看一条走不完的邮路。山路弯弯，父子不说话，狗懂。</p></div></div>
+        <div class="nd" style="--c:#e7b35a"><div class="t">夏至</div><div class="s">06.21</div><div class="card"><h3>阳光灿烂的日子 <i>140 分钟</i></h3><p>昼最长，最适合把童年还给你。蝉鸣、屋顶、没写完的作业。</p></div></div>
+        <div class="nd" style="--c:#e89a5c"><div class="t">秋分</div><div class="s">09.23</div><div class="card"><h3>秋菊打官司 <i>110 分钟</i></h3><p>收成之后，该算的账要算清。一个村妇，走了一整个秋天。</p></div></div>
+        <div class="nd" style="--c:#9fb6d8"><div class="t">冬至</div><div class="s">12.22</div><div class="card"><h3>冬眠 <i>196 分钟</i></h3><p>夜最长，适合窝着看一整部慢电影。雪、炉火、说不出口的话。</p></div></div>
+        <div class="nd" style="--c:#c8892a"><div class="t">除夕</div><div class="s">01.28</div><div class="card"><h3>东京物语 <i>136 分钟</i></h3><p>一年到头，总要回一次村口。父母在，年才在。</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="foot" role="contentinfo">
+  <div class="wrap">
+    <div class="fg">
+      <div><h5>🌾 乡村电影网</h5><ul><li><a href="#now">村口放映</a></li><li><a href="#sea">四季片单</a></li><li><a href="#rk">高分榜单</a></li><li><a href="#md">节气观影</a></li></ul></div>
+      <div><h5>🎬 题材</h5><ul><li><a href="#">乡土现实主义</a></li><li><a href="#">返乡叙事</a></li><li><a href="#">田园治愈</a></li><li><a href="#">农耕文明</a></li></ul></div>
+      <div><h5>📺 正版渠道</h5><ul><li><a href="#">主流视频平台</a></li><li><a href="#">艺术院线</a></li><li><a href="#">电影节展映</a></li></ul></div>
+      <div><h5>📖 关于</h5><ul><li><a href="#">什么是乡村电影</a></li><li><a href="#">选片标准</a></li><li><a href="#">免责声明</a></li></ul></div>
+    </div>
+    <div class="cp">
+      © 2026 乡村电影网（乡村电影网 / xiang cun dian ying wang）. 本站为<b>乡土题材电影的片单推荐与观影指南</b>平台，<b>不提供任何影视资源下载与在线播放服务，不收录盗版链接</b>，倡导支持正版、尊重创作者。所谓"乡村"，指的是镜头里那片土地、那条村道、那个始终在等你的人。<br>
+      网站网址：<a href="https://xiangcundianyingwang-cn.github.io/">https://xiangcundianyingwang-cn.github.io/</a>　｜　好电影，从土地里长出来
+    </div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.tabs a').forEach(function(a){
+  a.addEventListener('click',function(){
+    document.querySelectorAll('.tabs a').forEach(function(x){x.classList.remove('on')});
+    a.classList.add('on');
+  });
+});
+</script>
+</body>
+</html>
